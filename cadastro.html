@@ -37,9 +37,18 @@
 
 
 <main>
-    <form>
-        <input type="text">
-        <input type="button">
+    <form id="cadastro">
+        <label>Nome:<input type="text" required></label>
+        <br><br>
+        <label>Data de nascimento:<input type="date" required></label>
+        <br><br>
+        <label>Email:<input type="email" required></label>
+        <br><br>
+        <label>Senha:<input type="password" minlength="6" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$" required></label> <!--RETIRAR O PATTERN. SO EXEMPLO-->
+        <br><br>
+        <label>Confirme sua senha:<input type="password" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$" required></label>
+        <br><br>
+
     </form>
 </main>
 

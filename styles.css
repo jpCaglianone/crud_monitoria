@@ -6,7 +6,7 @@
 header {
     
     margin-top: 40px;
-    background-color: orange;
+    background-image: linear-gradient(10deg,orange,orange,orange,orange,yellow);
     width: 100%;
     height: var(--altura-header);
 }
@@ -42,11 +42,46 @@ li:active{
 
 main{
     width: 100%;
+
 }
 
-form{
+
+
+#cadastro{
     margin: 25px auto;
     width: 300px;
     height: 300px;
-    border: 2px solid red;
+    background-color: orange;
+    animation-name: fadePrincipal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label{
+    line-height: 22px;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+
+@keyframes fadePrincipal {
+    0%{
+        opacity: 0;
+        transform: translate(-800px,-200px);
+    }
+    60%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0%,0%) ;
+    }
 }
