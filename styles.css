@@ -1,0 +1,52 @@
+:root{
+    --altura-header : 100px;
+    --fonte-a: 25px;
+}
+
+header {
+    
+    margin-top: 40px;
+    background-color: orange;
+    width: 100%;
+    height: var(--altura-header);
+}
+
+ul{
+    display: inline-flex;
+    font-size: var(--fonte-a);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+li{
+    margin-left: 25px;
+    margin-top:calc( var(--altura-header) - var(--fonte-a) - 20px);
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+  
+}
+li:hover {
+    background-color: yellow;
+    transition: all 0.4s;
+}
+li:active{
+    transform: scale(0.9);
+    transition: all 0.1s;
+}
+
+main{
+    width: 100%;
+}
+
+form{
+    margin: 25px auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
